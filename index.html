@@ -7,6 +7,62 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <!-- Header directement affecté via le css donc pas de création de class -->
+        <button class="navButton">
+            <!-- Création d'un boutton ainsi qu'une class pour le positionner -->
+            <div>☰</div>
+        </button>
+        <h1>Mon Site Moderne</h1>
+        <!-- Comme le header, j'ai affecté mon h1 via le css donc pas de création de class-->
+        <nav>
+            <ul class="NoLine">
+                <li>
+                    <a class="white_txt NoLine" href="">Accueil</a>
+                </li>
+                <li>
+                    <a class="white_txt NoLine" href="">à propos</a>
+                </li>
+                <li>
+                    <a class="white_txt NoLine" href="">Contact</a>
+                </li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <section class="padding_top">
+            <div class="boxContainer">
+                <h2>Bienvenue !</h2>
+                <p>
+                    Voici un exemple de site responsive simple à reproduire. Il utilise une seule 
+                    media query pour s'adapter aux écrans mobiles.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2 class="padding_top">Nos services</h2>
+            <div class="boxContainer">
+                <h3> Service 1</h3>
+                <p>
+                    Un service simple et efficace pour bien démarrer.
+                </p>
+            </div>    
+            <div class="boxContainer">
+                <h3> Service 2</h3>
+                <p>
+                   Une solution adaptée à vos besoins quotidiens. 
+                </p>
+            </div>
+            <div class="boxContainer">
+                <h3> Service 3</h3>
+                <p>
+                    Un accompagnement personnalisé pour aller plus loin.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="white_txt centered_txt">2025 Mon site moderne</p>
+    </footer>
 </body>
 </html>
