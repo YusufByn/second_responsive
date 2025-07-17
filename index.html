@@ -30,30 +30,43 @@
          </nav>
     </header>
     <main>
-        <section class="padding_top">
-            <div class="boxContainer">
-                <h2>Bienvenue !</h2>
+        <section class="firstContainer">
+            <!-- Création d'une class firstContainer qui contiendra ma box img et ma box text -->
+            <div class="imgContainer">
+                <!-- Création d'une class imgContainer qui contiendra mon img -->
+                <img src="/assets/img/got.jpg" alt="Illustration game of thrones">
+            </div>
+            <div class="contentContainer">
+                <!-- Cette class me permet de contenir mes écrits et donc de différencier mon img et mes écrits -->
+                <h2 class="firstH2Position">Bienvenue !</h2>
+                <!-- étant donné que j'ai 2 h2 dans ma page et qu'ils n'auront pas les mêmes attributs,
+                 je crée une class pour celui-ci -->
                 <p>
                     Voici un exemple de site responsive simple à reproduire. Il utilise une seule 
                     media query pour s'adapter aux écrans mobiles.
                 </p>
             </div>
         </section>
-        <section>
-            <h2 class="padding_top">Nos services</h2>
-            <div class="boxContainer">
+        <h2>Nos services</h2>
+        <!-- mon h2 est en dehors de la section car sinon il sera dans une box -->
+        <section class="boxContainer">
+            <!-- dans mes medias queries, j'ai mis la commande boxContainer>div,
+             avec des propriétées différentes de la class boxContainer -->
+            <div>
                 <h3> Service 1</h3>
+                <!-- dans mes médias queries, j'ai directement affecter mes h3 ainsi que mes p dans le css,
+                 donc pas besoin de créer une class -->
                 <p>
                     Un service simple et efficace pour bien démarrer.
                 </p>
             </div>    
-            <div class="boxContainer">
+            <div>
                 <h3> Service 2</h3>
                 <p>
                    Une solution adaptée à vos besoins quotidiens. 
                 </p>
             </div>
-            <div class="boxContainer">
+            <div>
                 <h3> Service 3</h3>
                 <p>
                     Un accompagnement personnalisé pour aller plus loin.
@@ -62,6 +75,7 @@
         </section>
     </main>
     <footer>
+        <!-- le footer est directement affecté dans le css -->
         <p class="white_txt centered_txt">2025 Mon site moderne</p>
     </footer>
 </body>

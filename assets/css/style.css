@@ -50,8 +50,13 @@ footer{
     justify-content: center;
 }
 
-/* ce media me permet d'avoir la version moible, de 0 à 430px */
+/* -------------------------------------------------------------------------------------------
+---------------- VERSION MOBILE, MAX WITDH DE 430PX DONC DE 0 à 430PX MAX---------------------
+---------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 430px){
+    main{
+    padding: 20px 0;
+  }
     .navButton{
     display: block;
   }
@@ -62,15 +67,48 @@ footer{
     width: 100%;
     float: none;
   }
+  .firstContainer{
+    flex-wrap: wrap;
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .imgContainer{
+    width: 10px;
+    margin: 20px;
+    padding: 10px;
+  }
+  img{
+    width: 80px;
+  }
+
+  .contentContainer{
+    width: auto;
+    padding: 20px;
+  }
+
+  .firstH2Position{
+    display: flex;
+    justify-content: flex-start;
+    margin: 16px 0;
+  }
   .boxContainer{
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .boxContainer div{
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    padding: 15px;
-    margin: 10px auto;
+    width: 70%;
+    padding: 20px;
+    margin: 20px auto;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-  }
+} 
    h2{
     display: flex;
     justify-content: center;
@@ -90,9 +128,14 @@ footer{
 
 
 
-  /* Ce media me permet d'avoir la version desktop, de 431 à jsp combien de px  */
+ /* ------------------------------------------------------------------------------------------------
+ ------------------- VERSION DESKTOP, MIN WITDH DE 431PX DONC à PARTIR DE 431PX--------------------
+ -------------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 431px){
+  main{
+    padding: 20px 0;
+  }
     .navButton{
     display: none;
 }
@@ -103,12 +146,46 @@ footer{
     padding: 30px;
     gap: 8px;
 }
+  .firstContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .imgContainer{
+    width: 1%;
+    margin: 30px;
+  }
+
+  .contentContainer{
+    width: 50%;
+  }
+
+  .firstH2Position{
+    display: flex;
+    justify-content: flex-start;
+    margin: 16px 0;
+  }
   .boxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .boxContainer div{
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    width: 90%;
-    padding: 30px;
-    margin: 20px auto;
+    width: 20%;
+    padding: 20px;
+    margin: 30px auto;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
 }
@@ -116,7 +193,15 @@ footer{
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 20px;
+    margin: 10px;
 }
+  h3{
+    margin: 30px;
+  }
+
+  p{
+    margin: 10px;
+  }
 
 }
